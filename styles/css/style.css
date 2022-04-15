@@ -251,6 +251,7 @@ nav {
 .program-content-container h4 {
   width: 90px;
   min-width: 90px;
+  padding-right: 10px;
   color: #ec5242;
 }
 
@@ -643,7 +644,9 @@ nav {
   }
 
   .program-card-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2px;
   }
 
   .program-card {
@@ -653,7 +656,6 @@ nav {
     max-width: 200px;
     padding: 10px 18px 25px 18px;
     margin-bottom: 0;
-    margin-right: 2px;
   }
 
   .program-card h4 {
@@ -661,15 +663,12 @@ nav {
     width: 100%;
     margin-top: 5px;
     margin-bottom: 15px;
+    padding: 0;
   }
 
   .program-card p {
     font-size: 13px;
     font-weight: 400;
-  }
-
-  .program-card:last-child {
-    margin-right: 0;
   }
 
   .see-program {
